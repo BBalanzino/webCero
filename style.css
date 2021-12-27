@@ -1,0 +1,129 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*
+
+[] Falta definir tipografias
+[] Reutilizar codigo
+[] Implementar Tailwind
+
+*/
+
+:root {
+    --background: #F0D9FF;
+    --text_color: #7F7C82;
+}
+
+a:link {
+    color: #7F7C82;
+}
+
+p {
+    color: var(--text_color);
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    opacity: 0.8;
+}
+
+form {
+    outline: solid;
+    display:grid;
+    align-items: center;
+    height: 2rem;
+    width: 70rem;
+}
+
+footer {
+    background: #7F7C82;
+    height: 25vh;
+    width: 100%;
+}
+
+.inicio {
+    background: #CAF7E3;
+    height: 100vh;
+    width: 100%;
+}
+
+.referencia {
+    background: #cae7f7;
+    height: 100vh;
+    width: 100%;
+}
+
+.reserva {
+    background: #d64186;
+    height: 100vh;
+    width: 100%;
+}
+
+.pago {
+    background:#E4BAD4;
+    height: 100vh;
+    width: 100%;
+}
+
+.contacto {
+    background: #d6caf7;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    background: #d64186;
+    height: 4vh;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center; 
+}
+
+#inicio-btn {
+    text-decoration: none; 
+    border-width: 0 1px 0 0;
+    border-color: #a09fa1;
+    border-style: solid;
+    padding-left: 100px;
+    padding-right: 100px;
+} 
+
+#referencia-btn {
+    text-decoration: none;
+    border-width: 0 1px 0 0;
+    border-color: #a09fa1;
+    border-style: solid;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#reserva-btn {
+    text-decoration: none;
+    border-width: 0 1px 0 0;
+    border-color: #a09fa1;
+    border-style: solid;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#pago-btn {
+    text-decoration: none;
+    border-width: 0 1px 0 0;
+    border-color: #a09fa1;
+    border-style: solid;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#contacto-btn {
+    text-decoration: none;
+    padding-left: 100px;
+    padding-right: 100px;
+}
