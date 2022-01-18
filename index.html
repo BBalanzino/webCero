@@ -1,87 +1,439 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Mina Beauty Concept. Coaching en Dermatocosmiatria. Full Face. Rosario, Zona Norte. "
+    />
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
 
-    <!-- FALTA FAVICON DEL LOGO -->
+     <!--Estilos Carrusel  -->
+     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- javascript -->
+    <script src="/scripts/menu.js"></script>
+
+    <!-- Jam icons -->
+
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css" />
+
+    <!-- Carrusel -->
+   
+    <script src="/scripts/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <title>Mina Beauty Concept</title>
+  </head>
+  <body>
     
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='style.css' type='text/css'>
-    <title>HAUS | Nails Salon</title>
-</head>
-<body>
-    <header >
-        <nav>
-            <div class='container'>
-                <div><a id='inicio-btn' href='#inicio'>INTRO</a></div>
-                <div><a id='referencia-btn' href='#referencia'>FEED - FOTOS</a></div>
-                <div><a id='reserva-btn' href='#reserva'>RESERVA</a></div>
-                <div><a id='pago-btn' href='#pago'>PAGO</a></div>
-                <div><a id='contacto-btn' href='#contacto'>CONTACTO</a></div>
-            </div>
+    <!-- Cabecera -->
+
+    <header class="main-header">
+      <div class="content-wrapper">
+        <!-- Logo -->
+        <a href="/">
+          <img
+            src="https://media.istockphoto.com/photos/stamp-on-a-white-background-made-in-usa-picture-id1292369619?b=1&k=20&m=1292369619&s=170667a&w=0&h=-o6fM8k0DLsn5o3HhbH4zq_rLozWejQAZspmrFhuoQM="
+            alt="logo"
+          />
+        </a>
+        <!-- menu hamburguesa -->
+        <span id="open-menu-button" class="jam jam-menu"></span>
+        <nav id="main-menu" class="main-menu">
+          <span id="close-menu-button" class="jam jam-close"></span>
+
+          <ul>
+            <li><a href="/">Home</a></li>
+            <!-- <a href="/">
+              <img
+                src="https://www.flaticon.es/svg/vstatic/svg/3914/3914401.svg?token=exp=1642022350~hmac=673ebfd5e7b953e8cad521e2421d722a"
+                alt="Icono diamante"
+                width="20"
+              />
+            </a> -->
+            <li><a href="/tratamientos.html">Tratamientos</a></li>
+            <li><a href="/cursos.html">Cursos</a></li>
+            <li><a href="/productos.html">Productos</a></li>
+            <li><a href="/quienes-somos.html">Nosotros</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+            <a href="/compras.html">
+              <img src="/Iconos/shopping-cart.svg" alt="shoppin-cart" width="30"/>
+            </a>
+          </ul>
         </nav>
+      </div>
     </header>
-    <div id='inicio' class='inicio'>
-        <p >INICIO</p>
 
-        <!-- 
-            [] TEXTO DE HAUS
-            [] LOGO 
-        -->
+    <main>
+      <!-- Banner principal -->
 
-    </div>
-    <div id='referencia' class='referencia'>
-        <p>FEED - FOTOS</p>
-
-        <!--
-            [] ULTIMAS PUBLICACIONES DE INSTAGRAM (CARROUSEL)
-            [] FEED INSTRUCTIVO
-            [] NOTICIAS
-        -->
-    
-    </div>
-    <div id='reserva' class='reserva'>
-        <p>RESERVA</p>
-    </div>
-
-    <!-- SE PUEDE AGREGAR CURSOS (DEPENDIENDO EL TIEMPO DE ENTREGA) -->
-    
-    <div id='pago' class='pago'>
-        <p>PAGO</p>
-
-        <!-- APRENDER COMO AGREGAR PLATAFORMA DE PAGO -->
-
-    </div>
-    <div id='contacto' class='contacto'>
-        <p>CONTACTO</p>
-    
-        <!--
-
-        FORMULARIO DE CONTACTO
+      <section class="main-banner conteiner">
+        <div class="content-wrapper content"></div>
+        <div class="container">
+          <h1 class="title">Mina Beauty Concept</h1>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam
+            aspernatur dolore tenetur, error laudantium nisi! Esse atque
+            quisquam minima aliquid, enim dolor alias iure, veniam placeat sequi
+            rem rerum.
+          </p>
+          <a href="/contacto.html" class="button white">Contactanos</a>
+        </div>
         
-        [] Nombre
-        [] Apellido
-        [] Edad
-        [] email
-        [] Comentario
+      <!-- CARRUSEL -->
 
-        -->
-    
-        <form>
-            <input type='button' value=''>
-            <input type='email' name='' id=''>
-            <input type='text'>
-            <input type='submit'>
-        </form>
+      <div class="container ">
+        <h2 class="tratamiento">Tratamientos</h2>
+                
+        <!-- The carousel -->
+        <div id="myCarousel" class="carousel slide mt-4" data-interval="500">
+        
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li class="item1 active"></li>
+          <li class="item2"></li>
+          <li class="item3"></li>
+          <li class="item4"></li>
+          <li class="item5"></li>
+          <li class="item6"></li>
+          <li class="item7"></li>
+          <li class="item8"></li>
+          <li class="item9"></li>
+          <li class="item10"></li>
+          <li class="item11"></li>
+          <li class="item12"></li>
+        </ul>
+        
+        <!-- The Imagenes / tex -->
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <img src="/imgEnUso/Tratamientos/120600628_366733568020533_867537185386826491_n.jpg" alt="Dermaplaning" width="500">
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>LA is always so much fun!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/imgEnUso/Tratamientos/106095058_713600489440368_3277729533210268240_n.jpg" alt="Lash-lifting">
+          </div>
+          <div class="carousel-item">
+            <img src="/imgEnUso/Tratamientos/129722294_208655034113187_6530662550845844096_n.jpg" alt="Microblading">
+          </div>
+          <div class="carousel-item">
+            <img src="/imgEnUso/Tratamientos/117269813_404374267202768_5937380805592430080_n.jpg" alt="Brows">
+          </div>
+          <div class="carousel-item">
+            <img src="/imgEnUso/Tratamientos/127187260_414491852914324_5515950010864182154_n.jpg" alt="BBlips" >
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      </div>
+      
+      <script>
+      $(document).ready(function(){
+        // Activate the Carousel, but pause it from the start
+        $("#myCarousel").carousel("pause");
+              
+        // Enable Carousel Indicators
+        $(".item1").click(function(){
+          $("#myCarousel").carousel(0);
+        });
+        $(".item2").click(function(){
+          $("#myCarousel").carousel(1);
+        });
+        $(".item3").click(function(){
+          $("#myCarousel").carousel(2);
+        });
+          
+        // Enable Carousel Controls
+        $(".carousel-control-prev").click(function(){
+          $("#myCarousel").carousel("prev");
+        });
+        $(".carousel-control-next").click(function(){
+          $("#myCarousel").carousel("next");
+        });
+      });
+      </script>
+
+        <!-- <div class="container">
+          <img
+            class="image"
+            src="/img/M I N A (@minabeautyconcept) • Fotos y videos de Instagraam_files/121413491_393016498358891_8131216077950097344_n(1).jpg"
+            alt="Logo"
+            width="300"
+          />
+        </div> -->
+      </section> 
+
+      <!-- nuestos Tratamientos -->
+
+      <section class="services-section section-conteiner">
+        <h2>Tratamientos</h2>
+        <div class="content-wrapper">
+          <article class="service-item">
+            <span></span>
+            <h3>Tratamiento 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              officia nesciunt sapiente amet dignissimos sequi consequuntur,
+              quod quia saepe beatae rem ducimus cupiditate iste, perspiciatis
+              autem pariatur tenetur optio expedita.
+            </p>
+          </article>
+          <article class="service-item">
+            <span></span>
+            <h3>Tratamiento 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              officia nesciunt sapiente amet dignissimos sequi consequuntur,
+              quod quia saepe beatae rem ducimus cupiditate iste, perspiciatis
+              autem pariatur tenetur optio expedita.
+            </p>
+          </article>
+          <article class="service-item">
+            <span></span>
+            <h3>Tratamiento 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              officia nesciunt sapiente amet dignissimos sequi consequuntur,
+              quod quia saepe beatae rem ducimus cupiditate iste, perspiciatis
+              autem pariatur tenetur optio expedita.
+            </p>
+          </article>
+        </div>
+        <img
+          class="background"
+          src="https://images.unsplash.com/photo-1540845692348-b9d2bc813a63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmVhdXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+          alt="panta"
+        />
+      </section>
+
+      <!-- Cursos -->
+
+      <section class="section-container last-projects">
+        <div>
+          <h2>Cursos</h2>
+          <div class="content-wrapper">
+            <a href="#" class="project-item">
+              <article class="service-item">
+                <div>
+                  <h3>Automaqullaje</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Provident officia nesciunt sapiente amet dignissimos sequi
+                    consequuntur, quod quia saepe beatae rem ducimus cupiditate
+                    iste, perspiciatis autem pariatur tenetur optio expedita.
+                  </p>
+                </div>
+                <div class="image-container">
+                  <img
+                    src="/imgEnUso/121701675_356768082302419_2270568351339628651_n.jpg"
+                    alt="Automaquillaje"
+                  />
+                </div>
+              </article>
+            </a>
+            <a href="#" class="project-item">
+              <article class="service-item">
+                <div>
+                  <h3>Pestanias</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Provident officia nesciunt sapiente amet dignissimos sequi
+                    consequuntur, quod quia saepe beatae rem ducimus cupiditate
+                    iste, perspiciatis autem pariatur tenetur optio expedita.
+                  </p>
+                </div>
+                <div class="image-container">
+                  <img
+                    src="/imgEnUso/116967645_298499058129774_4846855721271142797_n.jpg"
+                    alt="Pestanias"
+                  />
+                </div>
+              </article>
+            </a>
+            <a href="#" class="project-item">
+              <article class="service-item">
+                <div>
+                  <h3>Cejas</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Provident officia nesciunt sapiente amet dignissimos sequi
+                    consequuntur, quod quia saepe beatae rem ducimus cupiditate
+                    iste, perspiciatis autem pariatur tenetur optio expedita.
+                  </p>
+                </div>
+                <div class="image-container">
+                  <img
+                    src="/imgEnUso/116967645_298499058129774_4846855721271142797_n.jpg"
+                    alt="Cejas"
+                  />
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Productos -->
+
+      <section>
+        <h2>Productos</h2>
+        <div>
+          <a href="">
+            <article>
+              <div>
+                <img src="" alt="" />
+                <h4>Producto 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur accusamus aliquid iste dolorem perspiciatis
+                  molestiae magni! Animi consequuntur molestias porro nesciunt,
+                  iste ea praesentium itaque, magni eius distinctio, numquam
+                  expedita?
+                </p>
+              </div>
+            </article>
+          </a>
+          <a href="">
+            <article>
+              <div>
+                <img src="" alt="" />
+                <h4>Producto 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur accusamus aliquid iste dolorem perspiciatis
+                  molestiae magni! Animi consequuntur molestias porro nesciunt,
+                  iste ea praesentium itaque, magni eius distinctio, numquam
+                  expedita?
+                </p>
+              </div>
+            </article>
+          </a>
+          <a href="">
+            <article>
+              <div>
+                <img src="" alt="" />
+                <h4>Producto 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur accusamus aliquid iste dolorem perspiciatis
+                  molestiae magni! Animi consequuntur molestias porro nesciunt,
+                  iste ea praesentium itaque, magni eius distinctio, numquam
+                  expedita?
+                </p>
+              </div>
+            </article>
+          </a>
+          <a href="">
+            <article>
+              <div>
+                <img src="" alt="" />
+                <h4>Producto 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur accusamus aliquid iste dolorem perspiciatis
+                  molestiae magni! Animi consequuntur molestias porro nesciunt,
+                  iste ea praesentium itaque, magni eius distinctio, numquam
+                  expedita?
+                </p>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
+
+      <!-- Sobre nosotros -->
+
+      <section class="section-container about-section">
+        <div class="content-wrapper">
+          <h2 class="title">Sobre Nosotros</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+            voluptas pariatur, corporis dolores dolore culpa exercitationem ad
+            necessitatibus a aliquid eum nostrum quidem distinctio, ipsum
+            blanditiis? Nulla distinctio expedita minima?
+          </p>
+          <a href="/tratamiento.html" class="button white ghost"
+            >Tratamientos</a
+          >
+        </div>
+        <img
+          src="/imgEnUso/151489854_252103029734394_1980857850737943098_n.jpg"
+          alt="Fotos Ro"
+        />
+      </section>
+
+      <!-- Contac -->
+
+      <section class="contac">
+        <div class="content-wrapper">
+          <h2 class="title">Contactanos</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis ipsa
+            illum exercitationem beatae perferendis a non, tenetur vel
+            necessitatibus sed tempora minima voluptates, facere delectus
+            ratione mollitia at deserunt iste.
+          </p>
+          <a href="mailto:minabeauty@gmail.com" class="button"
+            >contacto@minabeauty.com</a
+          >
+          <div class="social-netcontac">
+            <a href="#" target="_blank" class="buton"
+              ><span class="jam jam-facebook"></span
+            ></a>
+            <a href="https://www.instagram.com/minabeautyconcept/"
+              ><span class="jam jam-instagram"></span
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <hr>
+    <nav>
+      Series Articulos Sorteos Eventos
+    </nav>
+    <aside>
+    <div>
+        <h1>Mina Beauty Concept</h1>
     </div>
-    <footer>
-        <p>FOOTER</p>
-    
-        <!-- VER FOOTER DE OTRAS PAGINAS -->
-    
+    <h3>Nosotros</h3>
+    <p class="nosotros">
+      M I N A BEAUTY CONCEPT. Coaching en Dermatocosmiatria. Full Face. Rosario, Zona Norte
+    </p>
+
+
+    <p class="contacto">
+
+    </p>
+    <p>
+
+    </p>
+    <script src="./main.js"></script> -->
+    <footer class="main-footer">
+      <p>Todos los derechos reservados © 2022 | MINA BEAUTY CONCEPT</p>
     </footer>
-    <noscript>SE NECESITA JS</noscript>
-    <script src='./main.js'></script>
-</body>
+
+  </body>
 </html>
